@@ -1,0 +1,10 @@
+services:
+  zvonki:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - zvonki_data:/app/data
+
+volumes:
+  zvonki_data:

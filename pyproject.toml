@@ -1,0 +1,16 @@
+[project]
+name = "zvonki"
+version = "0.1.0"
+description = "Telegram alerts for fast token price movements on DexScreener"
+requires-python = ">=3.9"
+
+[project.scripts]
+zvonki = "zvonki.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["zvonki*"]
+
